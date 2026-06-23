@@ -55,7 +55,7 @@ export default function AdminDashboard() {
 
       {/* Analytics Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        {cards.map((card, i) => (
+        {cards.map((card: any, i: number) => (
           <div key={i} className="bg-white/5 backdrop-blur-md p-6 border border-white/10 shadow-xl rounded-2xl hover:bg-white/10 transition-colors">
             <div className="flex justify-between items-start mb-4">
               <div className="p-3 bg-white/5 rounded-full">

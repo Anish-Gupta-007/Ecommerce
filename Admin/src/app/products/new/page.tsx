@@ -52,7 +52,7 @@ export default function NewProductPage() {
       formData.append("stock", stock);
       formData.append("description", description);
       
-      images.forEach((img) => {
+      images.forEach((img: any) => {
         formData.append("images", img);
       });
 
@@ -174,7 +174,7 @@ export default function NewProductPage() {
           <h2 className="font-serif text-xl text-primary border-b border-surface pb-4">Media (Up to 5 images)</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {previewUrls.map((url, i) => (
+            {previewUrls.map((url: any, i: number) => (
               <div key={i} className="relative aspect-square border border-surface bg-surface group">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={url} alt="Preview" className="w-full h-full object-cover" />

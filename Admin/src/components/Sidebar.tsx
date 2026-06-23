@@ -55,7 +55,7 @@ export default function Sidebar() {
         </div>
 
         <nav className="flex-1 py-8 px-4 flex flex-col gap-2 overflow-y-auto">
-        {navLinks.map((link) => {
+        {navLinks.map((link: any) => {
           const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
           return (
             <Link 

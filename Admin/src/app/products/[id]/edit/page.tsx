@@ -95,7 +95,7 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
       formData.append("description", description);
       
       if (hasNewImages) {
-        images.forEach((img) => {
+        images.forEach((img: any) => {
           formData.append("images", img);
         });
       }
@@ -224,7 +224,7 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
           </h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {previewUrls.map((url, i) => (
+            {previewUrls.map((url: any, i: number) => (
               <div key={i} className="relative aspect-square border border-surface bg-surface group">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={url} alt="Preview" className="w-full h-full object-cover" />
