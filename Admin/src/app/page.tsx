@@ -86,7 +86,7 @@ export default function AdminDashboard() {
         
         {isLoading ? (
           <div className="p-8 space-y-4">
-            {[1, 2, 3].map(n => <div key={n} className="h-12 bg-white/10 rounded animate-pulse" />)}
+            {[1, 2, 3].map((n: any) => <div key={n} className="h-12 bg-white/10 rounded animate-pulse" />)}
           </div>
         ) : recentOrders?.length === 0 ? (
           <div className="text-center py-12 text-white/60 font-sans tracking-widest uppercase text-sm border-2 border-dashed border-white/10 m-6 rounded-xl">

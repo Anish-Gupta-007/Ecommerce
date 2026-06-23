@@ -121,7 +121,7 @@ export default function AdminOrders() {
           </thead>
           <tbody>
             {isLoading ? (
-              [1, 2, 3].map(n => (
+              [1, 2, 3].map((n: any) => (
                 <tr key={n} className="border-b border-white/10 animate-pulse">
                   <td className="p-4"><div className="h-4 w-20 bg-white/10 rounded" /></td>
                   <td className="p-4"><div className="h-4 w-24 bg-white/10 rounded" /></td>

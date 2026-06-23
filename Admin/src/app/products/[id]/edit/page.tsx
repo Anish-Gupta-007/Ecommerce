@@ -66,7 +66,7 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
       }
 
       setImages(prev => [...prev, ...filesArray]);
-      const newPreviews = filesArray.map(file => URL.createObjectURL(file));
+      const newPreviews = filesArray.map((file: any) => URL.createObjectURL(file));
       
       setPreviewUrls(prev => hasNewImages ? [...prev, ...newPreviews] : newPreviews);
     }

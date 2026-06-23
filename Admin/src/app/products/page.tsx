@@ -101,7 +101,7 @@ export default function AdminProducts() {
           </thead>
           <tbody>
             {isLoading ? (
-              [1, 2, 3].map(n => (
+              [1, 2, 3].map((n: any) => (
                 <tr key={n} className="border-b border-white/10 animate-pulse">
                   <td className="p-4"><div className="h-10 w-32 bg-white/10 rounded" /></td>
                   <td className="p-4"><div className="h-4 w-20 bg-white/10 rounded" /></td>
@@ -110,7 +110,7 @@ export default function AdminProducts() {
                   <td className="p-4"><div className="h-4 w-16 bg-white/10 rounded ml-auto" /></td>
                 </tr>
               ))
-            ) : products?.map(product => (
+            ) : products?.map((product: any) => (
               <tr key={product._id} className="border-b border-white/5 hover:bg-white/5 transition-colors">
                 <td className="p-4">
                   <div className="flex items-center gap-4">

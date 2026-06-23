@@ -30,7 +30,7 @@ export default function NewProductPage() {
       setImages(prev => [...prev, ...filesArray]);
       
       // Create preview URLs
-      const newPreviews = filesArray.map(file => URL.createObjectURL(file));
+      const newPreviews = filesArray.map((file: any) => URL.createObjectURL(file));
       setPreviewUrls(prev => [...prev, ...newPreviews]);
     }
   };
