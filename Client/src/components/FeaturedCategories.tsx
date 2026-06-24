@@ -11,7 +11,7 @@ const CATEGORIES = [
     title: "Signature Timepieces",
     subtitle: "MENS COLLECTION",
     badge: "NEW",
-    image: "/api/images/watch",
+    image: "/images/watch.png",
     href: "/shop/timepieces",
   },
   {
@@ -19,7 +19,7 @@ const CATEGORIES = [
     title: "Premium Leather Goods",
     subtitle: "WOMENS COLLECTION",
     badge: "BESTSELLER",
-    image: "/api/images/handbag",
+    image: "/images/handbag.png",
     href: "/shop/leather-goods",
   },
   {
@@ -27,7 +27,7 @@ const CATEGORIES = [
     title: "Artisan Fragrances",
     subtitle: "UNISEX COLLECTION",
     badge: "SALE",
-    image: "/api/images/fragrance",
+    image: "/images/fragrance.png",
     href: "/shop/fragrances",
   },
 ];
