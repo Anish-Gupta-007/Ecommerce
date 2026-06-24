@@ -65,7 +65,7 @@ export default function AdminGuard({ children }: { children: React.ReactNode }) 
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center p-4">
+      <div className="min-h-screen flex items-center justify-center p-4 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#3A3D34] via-[#2B2D26] to-[#141512]">
         <div className="w-full max-w-md bg-surface/30 p-12 border border-surface shadow-xl">
           <h1 className="text-3xl font-serif text-primary mb-2 text-center">Admin Portal</h1>
           <p className="text-muted font-sans text-xs uppercase tracking-widest text-center mb-10">

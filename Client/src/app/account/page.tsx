@@ -16,7 +16,7 @@ function AccountContent() {
   const redirectPath = searchParams.get("redirect") || "/";
 
   return (
-    <div className="w-full bg-background min-h-screen pt-32 pb-24 px-4 md:px-12 flex items-center justify-center">
+    <div className="w-full min-h-screen pt-32 pb-24 px-4 md:px-12 flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#3A3D34] via-[#2B2D26] to-[#141512]">
       <div className="w-full max-w-md bg-surface/30 p-12 border border-surface">
         <h1 className="text-3xl font-serif text-primary mb-2 text-center">
           {isLogin ? "Welcome Back" : "Create Account"}
