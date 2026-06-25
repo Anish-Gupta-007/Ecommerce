@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Instagram, Twitter, Facebook } from "lucide-react";
 
 const FOOTER_LINKS = {
@@ -19,6 +20,9 @@ const FOOTER_LINKS = {
 };
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname === '/account') return null;
+
   return (
     <footer className="w-full bg-[#050604] pt-16 md:pt-24 pb-8 px-6 md:px-12 overflow-hidden relative">
       
